@@ -1,9 +1,7 @@
-FROM docker.elastic.co/kibana/kibana:5.6.0
+FROM kibana:4.5.0
 MAINTAINER Luis David Barrios (cyberluisda@gmail.com)
 
-ENV KIBANA_HOME "/usr/share/kibana"
-# Remove xpack
-RUN bin/kibana-plugin remove x-pack
+ENV KIBANA_HOME "/opt/kibana"
 
-# Remove xpack configuration
-RUN sed -i -e '/xpack/d' "$KIBANA_HOME/config/kibana.yml"
+# Install SENSE plugin
+RUN kibana plugin --install elastic/sense

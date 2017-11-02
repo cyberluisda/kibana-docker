@@ -1,2 +1,2 @@
 # kibana-docker
-Kibana image with x-pack plugin removed
+Kibana 4.5 image with sesne plugin installed
