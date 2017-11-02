@@ -1,4 +1,4 @@
-FROM docker.elastic.co/kibana/kibana:5.6.0
+FROM docker.elastic.co/kibana/kibana:5.6.1
 MAINTAINER Luis David Barrios (cyberluisda@gmail.com)
 
 ENV KIBANA_HOME "/usr/share/kibana"
